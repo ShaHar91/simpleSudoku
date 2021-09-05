@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/timerTitle"
+        android:alphabeticShortcut="@string/settings_shortcut"
+        android:title="@string/timerVal"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/timer"
+        android:alphabeticShortcut="@string/settings_shortcut"
+        app:showAsAction="always" />
+
+</menu>
