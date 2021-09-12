@@ -1,49 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".ui.MainActivity"
-    android:background="@color/background"
-    android:padding="30dp" >
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
 
     <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:orientation="vertical" >
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.old.MainActivity">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginBottom="25dip"
-            android:text="@string/main_title"
-            android:textSize="24.5sp" />
-
-        <Button
-            android:id="@+id/continueBtn"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/continue_label" />
-
-        <Button
-            android:id="@+id/newBtn"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/new_game_label" />
-
-        <Button
-            android:id="@+id/aboutBtn"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/about_label" />
-
-        <Button
-            android:id="@+id/exitBtn"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/exit_label" />
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/my_nav_host_fragment"
+            android:name="androidx.navigation.fragment.NavHostFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:defaultNavHost="true"
+            app:navGraph="@navigation/nav_graph_main" />
     </LinearLayout>
-</LinearLayout>
+</layout>

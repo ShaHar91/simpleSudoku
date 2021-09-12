@@ -1,4 +1,4 @@
-package com.shahar91.sudoku.ui
+package com.shahar91.sudoku.ui.old
 
 import android.app.Activity
 import android.app.AlertDialog
@@ -8,8 +8,6 @@ import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
-import com.shahar91.sudoku.Music
-import com.shahar91.sudoku.Prefs
 import com.shahar91.sudoku.R
 import com.shahar91.sudoku.data.DatabaseConnector
 import java.io.IOException
@@ -18,7 +16,7 @@ import java.sql.SQLException
 class MainActivity : Activity(), View.OnClickListener {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_main_old)
         val myDbHelper = DatabaseConnector(this@MainActivity)
         try {
             myDbHelper.createDataBase()

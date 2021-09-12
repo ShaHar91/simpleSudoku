@@ -1,4 +1,4 @@
-package com.shahar91.sudoku.ui
+package com.shahar91.sudoku.ui.old
 
 import android.app.Activity
 import android.app.Dialog
@@ -14,8 +14,8 @@ import android.widget.Button
 import android.widget.RatingBar
 import android.widget.TextView
 import android.widget.Toast
-import com.shahar91.sudoku.Music.play
-import com.shahar91.sudoku.Music.stop
+import com.shahar91.sudoku.ui.old.Music.play
+import com.shahar91.sudoku.ui.old.Music.stop
 import com.shahar91.sudoku.R
 import com.shahar91.sudoku.data.DatabaseConnector
 

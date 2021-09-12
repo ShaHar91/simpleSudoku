@@ -1,4 +1,4 @@
-package com.shahar91.sudoku.ui
+package com.shahar91.sudoku.ui.old
 
 import android.os.Bundle
 
@@ -10,8 +10,6 @@ import android.graphics.Paint
 import android.graphics.Rect
 
 import android.view.MotionEvent
-
-import com.shahar91.sudoku.Prefs
 
 import android.util.Log
 import android.view.KeyEvent

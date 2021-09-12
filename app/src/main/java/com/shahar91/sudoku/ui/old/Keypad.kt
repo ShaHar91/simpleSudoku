@@ -1,4 +1,4 @@
-package com.shahar91.sudoku.ui
+package com.shahar91.sudoku.ui.old
 
 import android.app.Dialog
 import android.content.Context

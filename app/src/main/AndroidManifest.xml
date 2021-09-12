@@ -1,18 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.shahar91.sudoku" >
+    package="com.shahar91.sudoku">
 
     <application
-        android:allowBackup="true"
+        android:allowBackup="false"
+        android:name=".App"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Sudoku" >
+        android:theme="@style/Theme.Sudoku">
         <activity
-            android:name=".ui.MainActivity"
+            android:name=".ui.main.MainActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".ui.SplashActivity"
             android:exported="true"
+            android:theme="@style/Theme.Sudoku.Landing">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.old.MainActivity"
             android:label="@string/app_name"
+            android:exported="true"
             android:theme="@style/Theme.Sudoku.NoActionBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,23 +37,19 @@
         <activity
             android:name=".About"
             android:label="@string/about_title"
-            android:theme="@android:style/Theme.Dialog" >
-        </activity>
+            android:theme="@android:style/Theme.Dialog" />
         <activity
-            android:name=".Prefs"
+            android:name=".ui.old.Prefs"
             android:label="@string/settings_title"
-            android:screenOrientation="locked" >
-        </activity>
+            android:screenOrientation="locked" />
         <activity
-            android:name=".ui.Game"
+            android:name=".ui.old.Game"
             android:label="@string/game_title"
-            android:screenOrientation="locked" >
-        </activity>
+            android:screenOrientation="locked" />
         <activity
-            android:name=".ui.GameList"
+            android:name=".ui.old.GameList"
             android:label="@string/game_title"
-            android:screenOrientation="locked" >
-        </activity>
+            android:screenOrientation="locked" />
     </application>
 
 </manifest>

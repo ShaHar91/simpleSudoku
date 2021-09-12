@@ -1,4 +1,4 @@
-package com.shahar91.sudoku.ui;
+package com.shahar91.sudoku.ui.old;
 
 import android.app.ListActivity;
 import android.content.Context;
@@ -14,7 +14,6 @@ import android.widget.TextView;
 import androidx.cursoradapter.widget.ResourceCursorAdapter;
 import androidx.cursoradapter.widget.SimpleCursorAdapter;
 
-import com.shahar91.sudoku.Music;
 import com.shahar91.sudoku.R;
 import com.shahar91.sudoku.data.DatabaseConnector;
 

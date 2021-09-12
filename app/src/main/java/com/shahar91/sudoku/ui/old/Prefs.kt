@@ -1,4 +1,4 @@
-package com.shahar91.sudoku
+package com.shahar91.sudoku.ui.old
 
 import android.content.Context
 import android.preference.PreferenceManager
@@ -6,6 +6,7 @@ import android.preference.PreferenceManager
 import android.os.Bundle
 
 import android.preference.PreferenceActivity
+import com.shahar91.sudoku.R
 
 
 class Prefs : PreferenceActivity() {

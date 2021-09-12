@@ -1,7 +1,8 @@
-package com.shahar91.sudoku
+package com.shahar91.sudoku.ui.old
 
 import android.content.Context
 import android.media.MediaPlayer
+import com.shahar91.sudoku.R
 
 object Music {
     private var mp: MediaPlayer? = null
